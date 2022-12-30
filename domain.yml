@@ -1,0 +1,150 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - feel_good
+  - feel_bad
+  - thanks
+  - first_name
+  - podcast_genre
+  - book_genre
+  - music_genre
+  - listen_podcast
+  - read_books
+  - listen_music
+  - happy_podcast
+  - motivation_podcast
+  - crime_podcast
+  - thriller_book
+  - self_help
+  - fiction_book
+  - soulful_music
+  - party_music
+  - romantic_music
+  - great
+  - storedatabase
+  - feedback
+  - bot_challenge
+
+entities:
+  - firstname
+  - feedback
+
+slots:
+  firstname:
+    type: text
+    influence_conversation: false
+  feedback:
+    type: text
+    influence_conversation: false
+
+
+responses:
+  utter_greet:
+  - text: "Hey!! I am an entertainment bot wherein I will give you great suggestions according to your mood.
+            What is your firstname?"
+
+  utter_age:
+  - text: "Can I also know your age?"
+
+  utter_feeling:
+  - text: "How are you doing today, {firstname}?"
+
+  utter_to_ask:
+  - text: "Would you like me to save your information?"
+
+  utter_awesome:
+  - text: "That's awesome!"
+
+  utter_podcast_awesome:
+  - text: "That's an awesome podcast genre choice!!"
+
+  utter_book_awesome:
+  - text: "That's an awesome book genre choice!!"
+
+  utter_music_awesome:
+  - text: "That's an awesome music genre choice!!"
+
+  utter_sorry:
+  - text: "I am sorry to hear that. I am sure you will feel good after this."
+
+  utter_what_to_do:
+  - text: "What do you wish to do today? \n
+            1. Listen to Podcast \n
+            2. Read a book \n
+            3. Listen to music "
+
+  utter_genre:
+  - text: "Great choice, {firstname}!! What is the genre that you generally prefer in this to know you better?"
+
+  utter_podcast:
+  - text: "What type of podcast do you want to listen to? \n
+            1. Happy Podcast \n
+            2. Motivational Podcast \n
+            3. Crime Podcast "
+
+  utter_book:
+  - text: "What type of book do you want to read? \n
+            1. Thriller Book \n
+            2. Self-help book \n
+            3. Fictional Book "
+
+  utter_music:
+  - text: "What type of music do you want to listen to? \n
+            1. Soulful Songs \n
+            2. Party Songs \n
+            3. Romantic Songs "
+
+  utter_options:
+  - text: "Let me get some amazing options for you in this category"
+
+  utter_anythingelse:
+  - text: "Would you like to know some other options as well?"
+
+  utter_did_that_help:
+  - text: "Did that help you, {firstname}?"
+
+  utter_positive_feedback:
+  - text: "I would love you feedback. Please rate me on a scale of one-five."
+
+  utter_negative_feedback:
+  - text: "Please rate me on a scale of one-five to improve your experience next time"
+
+  utter_great_to_have_you:
+  - text: "It was great to have you here! Hope you got some good suggestions!"
+
+  utter_thanks:
+  - text: "Thank you for your feedback!"
+
+  utter_welcome:
+  - text: "You're welcome. Have fun!!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_podcast
+  - utter_book
+  - utter_music
+  - action_soulful_music_call
+  - action_party_music_call
+  - action_romantic_music_call
+  - action_motivation_podcast_call
+  - action_happy_podcast_call
+  - action_crime_podcast_call
+  - action_thriller_book_call
+  - action_selfhelp_book_call
+  - action_fictional_book_call
+  - action_store
+  - action_save_firstname
+  - action_save_feedback
