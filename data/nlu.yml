@@ -1,0 +1,257 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - morning
+    - afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: feel_good
+  examples: |
+    - I am doing good
+    - doing good
+    - doing great
+    - I m fine
+    - good
+    - fine
+    - great
+    - I am fine 
+    - amazing
+
+- intent: feel_bad
+  examples: |
+    - doing okay
+    - okay
+    - doing bad
+    - I am not fine
+    - not that great
+    - not good
+    - not great
+    - okayish
+    - not fine
+
+- intent: thanks
+  examples: |
+    - Ok, thank you so much for these suggestions
+    - Thank you for these suggestions
+    - This was helpful
+    - Thanks a lot.
+    - Thanks
+    - Thank you
+    - Thanks a ton
+
+- intent: first_name
+  examples: |
+    - My name is [Sanika](firstname)
+    - you can call me [Rohan](firstname)
+    - It's [Rutik](firstname)
+    - [Sathvick](firstname) this side
+    - [Sanika](firstname)
+    - [Rutik](firstname)
+    - [Ankita](firstname)
+    - [Rohan](firstname)
+    - [Teja](firstname)
+    - [Sathvick](firstname)
+    - [Jorjeta](firstname)
+    - [Sumit](firstname)
+
+- intent: podcast_genre
+  examples: |
+    - motivation
+    - health
+    - comedy
+    - science
+    - technology
+
+- intent: book_genre
+  examples: |
+    - thriller
+    - happy
+    - sad
+    - biography
+    - fairytale
+
+- intent: music_genre
+  examples: |
+    - lofi
+    - study
+    - concentrate
+    - calm
+    - high beat
+
+- intent: listen_podcast
+  examples: |
+    - podcast
+    - Podcast 
+    - listen to podcast
+    - listen to a podcast
+
+- intent: read_books
+  examples: |
+    - books
+    - Books
+    - book 
+    - read book
+    - read a book
+
+- intent: listen_music
+  examples: |
+    - music
+    - Music 
+    - listen to music
+    - listen music
+
+- intent: happy_podcast
+  examples: |
+    - happy podcast
+    - Happy Podcast
+    - podcast happy
+
+- intent: motivation_podcast
+  examples: |
+    - motivational podcast
+    - Motivational Podcast
+    - podcast motivational
+
+- intent: crime_podcast
+  examples: |
+    - crime podcast
+    - Crime Podcast
+    - podcast crime
+
+- intent: thriller_book
+  examples: |
+    - thriller book
+    - Thriller Book
+
+- intent: self_help
+  examples: |
+    - self help book
+    - Self Help Book
+    - Non-fictional Book
+    - self-help book
+    - Self-help book
+
+- intent: fiction_book
+  examples: |
+    - fictional book
+    - fiction book
+    - Fictional book
+    - Fiction Book
+
+- intent: soulful_music
+  examples: |
+    - soulful music
+    - music soul to ears
+    - Soulful Music
+    - soulful songs
+    - peaceful music
+    - calm music
+
+- intent: party_music
+  examples: |
+    - party music
+    - dance music
+    - party dance music
+    - music to groove to
+    - highbeat music
+    - party songs
+    - high bass music
+
+- intent: romantic_music
+  examples: |
+    - romantic music
+    - slow dance music
+    - romance music
+    - romantic songs
+
+- intent: great
+  examples: |
+    - That will be great
+    - that will be great
+    - that's good
+    - thats good
+    - awesome 
+    - amazing
+    - great
+    - cool
+    - good
+
+- intent: storedatabase
+  examples: |
+    - yes I want to store my information
+    - yes store info
+    - yes dump the info
+    - yes save my info
+    - save my info
+    - store my data
+    - store my info
+    - yes store
+    - yes save
+    - yes you may store
+    - yes you can save
+
+- intent: feedback
+  examples: |
+    - [helpful](feedback)
+    - [nice](feedback)
+    - [could improve](feedback)
+    - [good suggestion](feedback)
+    - [five](feedback)
+    - [four](feedback)
+    - [three](feedback)
+    - [two](feedback)
+    - [one](feedback)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,163 @@
+version: "2.0"
+
+stories:
+
+
+- story: greet_good_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+    - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_feeling
+  - intent: feel_good
+  - action: utter_awesome
+  - action: utter_what_to_do
+
+- story: greet_bad_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+    - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_feeling
+  - intent: feel_bad
+  - action: utter_sorry
+  - action: utter_what_to_do
+
+- story: podcast_path
+  steps:
+  - intent: listen_podcast
+  - action: utter_genre
+  - intent: podcast_genre
+  - action: utter_podcast_awesome
+  - action: utter_podcast
+
+- story: books_path
+  steps:
+  - intent: read_books
+  - action: utter_genre
+  - intent: book_genre
+  - action: utter_book_awesome 
+  - action: utter_book
+
+- story: music_path
+  steps:
+  - intent: listen_music
+  - action: utter_genre
+  - intent: music_genre
+  - action: utter_music_awesome
+  - action: utter_music
+
+- story: happy_podcast_path
+  steps:
+  - intent: happy_podcast
+  - action: utter_options
+  - action: action_happy_podcast_call
+
+- story: motivation_podcast_path
+  steps:
+  - intent: motivation_podcast
+  - action: utter_options
+  - action: action_motivation_podcast_call
+
+- story: crime_podcast_path
+  steps:
+  - intent: crime_podcast
+  - action: utter_options
+  - action: action_crime_podcast_call
+
+- story: thriller_book_path
+  steps:
+  - intent: thriller_book
+  - action: utter_options
+  - action: action_thriller_book_call
+
+- story: self_help_book_path
+  steps:
+  - intent: self_help
+  - action: utter_options
+  - action: action_selfhelp_book_call
+
+- story: fiction_book_path
+  steps:
+  - intent: fiction_book
+  - action: utter_options
+  - action: action_fictional_book_call
+
+- story: soulful_music_path
+  steps:
+  - intent: soulful_music
+  - action: utter_options
+  - action: action_soulful_music_call
+
+- story: party_music_path
+  steps:
+  - intent: party_music
+  - action: utter_options
+  - action: action_party_music_call
+
+- story: romantic_music_path
+  steps:
+  - intent: romantic_music
+  - action: utter_options
+  - action: action_romantic_music_call
+
+
+- story: anything_else_deny_path
+  steps: 
+  - intent: great
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_did_that_help
+
+- story: anything_else_affirm_path
+  steps: 
+  - intent: great
+  - action: utter_anythingelse
+  - intent: affirm
+  - action: utter_what_to_do
+
+- story: utter_did_that_help_path
+  steps:
+  - intent: affirm
+  - action: utter_positive_feedback
+  - intent: feedback
+    entities:
+    - firstname: "feedback"
+  - action: utter_thanks
+  - action: action_save_feedback
+  - intent: storedatabase
+  - action: action_store
+
+- story: utter_did_that_help_path
+  steps:
+  - intent: deny
+  - action: utter_negative_feedback
+  - intent: feedback
+    entities:
+    - firstname: "feedback"
+  - action: utter_thanks
+  - action: action_save_feedback
+  - intent: storedatabase
+  - action: action_store
+
+- story: thanks_path
+  steps:
+  - intent: thanks
+  - action: utter_welcome
+  - action: utter_great_to_have_you
+
+- story: goodbye_path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot_challenge_path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
