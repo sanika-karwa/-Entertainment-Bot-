@@ -1,5 +1,5 @@
 # Entertainment Bot
-A virtual assistant powered by **Rasa 2.0** which provides suggestions for entertainment options like podcasts, books and music based on our mod and what we wish to see. 
+A virtual assistant powered by **Rasa 2.0** which provides suggestions for entertainment options like podcasts, books and music based on our mood and what we wish to see. 
 
 #### Instructions to run:
 
